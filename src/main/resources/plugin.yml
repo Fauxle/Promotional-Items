@@ -1,5 +1,5 @@
 name: PromotionalItems
-main: me.fauxle.promoitems.PromotionalItems
+main: me.fauxle.promoitems.PluginLoader
 version: '${version}'
 author: 'Fauxle'
 website: 'https://github.com/Fauxle/Promotional-Items'
