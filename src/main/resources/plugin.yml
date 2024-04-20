@@ -1,0 +1,6 @@
+name: PromotionalItems
+main: me.fauxle.promoitems.PromotionalItems
+version: '${version}'
+author: 'Fauxle'
+website: 'https://github.com/Fauxle/Promotional-Items'
+api-version: '1.20'
