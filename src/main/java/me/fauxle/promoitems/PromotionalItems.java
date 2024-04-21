@@ -32,7 +32,7 @@ public class PromotionalItems implements Listener {
             throw new InvalidConfigurationException("item-drop-chance must be within the bound [0, 1]");
     }
 
-    // A populated chunk usually occurs when the chunk is loaded for the first time
+    // A populated chunk event usually occurs when the chunk is created for the first time
     // But if it is for when it is strictly a new chunk being loaded, use
     // ChunkLoadEvent and check event.isNewChunk() condition
     @EventHandler
@@ -41,6 +41,7 @@ public class PromotionalItems implements Listener {
         // The item drop is a random chance (default 30% chance)
         if (random.nextDouble() > itemDropChance) return;
 
+        // get a chunk snapshot. we only need to include max block y in it
         ChunkSnapshot chunkSnapshot = event.getChunk().getChunkSnapshot(true, false, false);
         int offsetX = random.nextInt(15);
         int offsetZ = random.nextInt(15);
