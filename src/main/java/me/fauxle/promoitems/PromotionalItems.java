@@ -43,8 +43,8 @@ public class PromotionalItems implements Listener {
 
         // get a chunk snapshot. we only need to include max block y in it
         ChunkSnapshot chunkSnapshot = event.getChunk().getChunkSnapshot(true, false, false);
-        int offsetX = random.nextInt(15);
-        int offsetZ = random.nextInt(15);
+        int offsetX = random.nextInt(16);
+        int offsetZ = random.nextInt(16);
         int y = chunkSnapshot.getHighestBlockYAt(offsetX, offsetZ);
 
         // a random location within the chunk (but on the surface)
